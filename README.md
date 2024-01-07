@@ -1,8 +1,15 @@
-# React + Vite
+Im going to be making a Marvel Comic site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I want you to be able to search for different characters and comics that they are in
 
-Currently, two official plugins are available:
+I plan on using:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- HTML
+- CSS
+- Javascript
+- React
+- A marvel web API
+
+Getting the api to work the way that I want them to is the the things that I expect to be the hardest thing
+
+You can access the site here: 
