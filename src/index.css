@@ -9,6 +9,40 @@ body{
   width: 100vw;
 }
 
+
+.sub-container{
+  position: relative;
+  display: inline-block;
+}
+
+.sub-menu{
+  /* width: 100vw; */
+  /* display: flex;
+  justify-content: flex-end; */
+  background-color: rgb(77, 6, 6);
+  min-width: 160px;
+  margin-left: -25px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  
+}
+
+.sub-content{
+  /* display: inline-block; */
+  padding: 15px;
+  margin-right: 20px;
+}
+
+.sub-content:hover{
+  background-color: rgb(100, 7, 7)
+}
+
+.sub-container:hover .sub-menu{
+  display:block;
+}
+
 .nav-bar{
   background-color: rgb(107, 6, 6);
   display: flex;
@@ -26,7 +60,15 @@ body{
 
 .nav-content{
   padding: 20px;
-  /* background-color: ; */
+}
+
+div.nav-content{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-content:hover{
+  background-color: rgb(143, 8, 8);
 }
 
 .footer{
