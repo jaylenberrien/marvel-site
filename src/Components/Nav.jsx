@@ -9,14 +9,22 @@ const Nav = () => {
                 <Link to="/">
                     <div class="nav-content">Home</div>
                 </Link>
-                <div class="nav-content">Characters</div>
-                <div class="nav-content"> 
+                <Link to="/characters">
+                    <div class="nav-content">Characters</div>
+                </Link>
+                <div class="nav-content" id="sub"> 
                     <div class="sub-container"> 
                         <div class="sub-target">Search</div> 
                         <div class="sub-menu">
-                            <div class="sub-content">Character Search</div>
-                            <div class="sub-content">Comic Search</div>
-                            <div class="sub-content">Series Search</div>
+                            <Link to="/character-search">
+                                <div class="sub-content sub-container">Character Search</div>
+                            </Link>
+                            <Link to="/comic-search">
+                                <div class="sub-content sub-container">Comic Search</div>
+                            </Link>
+                            <Link to="/series-search">
+                                <div class="sub-content sub-container">Series Search</div>
+                            </Link>  
                         </div>
                     </div>
                 </div> 
