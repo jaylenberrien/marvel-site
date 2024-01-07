@@ -11,17 +11,16 @@ function App() {
   
 
   return (
-    <>
-      <div>
-        <Nav />
-        <Routes >
-          <Route exact path='/' element={<Main />}/>
-          <Route path='/about' element={<About />}/>
-        </Routes>
-        <Footer />
-      </div>
+    <div>
+      <Nav />
+      <Routes >
+        <Route exact path='/' element={<Main />}/>
+        <Route path='/about' element={<About />}/>
+      </Routes>
+      <Footer />
+    </div>
     
-    </>
+    
   )
 }
 

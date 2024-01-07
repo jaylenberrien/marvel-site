@@ -2,7 +2,7 @@ import React from 'react'
 
 const SeriesSearch = () => {
   return (
-    <div>SeriesSearch</div>
+    <div class="page-container">SeriesSearch</div>
   )
 }
 
