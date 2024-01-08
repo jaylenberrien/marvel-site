@@ -1,9 +1,47 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const ComicSearch = () => {
+  
+  const [value, setValue] = useState("");
+  const [comic, setComic] = useState(null);
+
+  const publicKey = import.meta.env.VITE_UKEY;
+  const hash = import.meta.env.VITE_HASH;
+  const ts = import.meta.env.VITE_TS;
+
+  const click = async (e) =>{
+    e.preventDefault();
+    let userInput = value;
+    try{
+      let comicResult = await fetch(`https://gateway.marvel.com:443/v1/public/comics?titleStartsWith=${userInput}${ts}&apikey=${publicKey}${hash}`)
+      comicResult = await comicResult.json();
+      setComic(comicResult.data);
+      console.log(comicResult.data)
+    }
+    catch (error){
+      console.log(error);
+    }
+
+
+  };
+  
+
+  
+
+  const change = evt =>{
+    setValue(evt.target.value)
+  };
+
   return (
-    <div class="page-container">ComicSearch</div>
+    <div class="page-container">
+      <div>
+        ComicSearch
+      </div>
+      <input type='text' id="submitComicSInput" onChange={change} value={value}placeholder='I want to see ...'/>
+      <button id="submitComicSearch" onClick={click}>Sumbit</button>
+    </div>
   )
+  
 }
 
 export default ComicSearch
