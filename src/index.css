@@ -11,6 +11,10 @@ body{
   display: flex;
 }
 
+h1, h2, h3{
+  font-family: 'Gugi', sans-serif;
+}
+
 input{
   margin-bottom:50px;
 }
@@ -63,7 +67,7 @@ div#sub.nav-content{
 }
 
 .sub-content:hover{
-  background-color: rgb(100, 7, 7)
+  color: rgb(19, 19, 19);
 }
 
 .sub-container:hover .sub-menu{
@@ -82,6 +86,7 @@ div#sub.nav-content{
   margin-left: -8px;
   margin-bottom: 100PX;
   height: 90px;
+  font-family: 'Gugi', sans-serif;
   
 }
 
@@ -104,7 +109,7 @@ p.nav-title{
   padding: 20px;
   flex: 1;
   text-align: center;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 div.nav-content{
@@ -118,7 +123,7 @@ a{
 }
 
 .nav-content:hover{
-  background-color: rgb(143, 8, 8);
+  color: rgb(19, 19, 19);
 }
 
 .footer{
