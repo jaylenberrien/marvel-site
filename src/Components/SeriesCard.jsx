@@ -9,7 +9,7 @@ const SeriesCard = ({series}) => {
   return (
     <div id='charSearchResult'>
         {series.results.map((series)=> ( 
-            <div key={series.id}>
+            <div class='character-container' key={series.id}>
                 <p>{series.name}</p>
                 <img src={`${series.thumbnail.path}.${series.thumbnail.extension}`}alt={series.name} />
                 <p>{series.description}</p>

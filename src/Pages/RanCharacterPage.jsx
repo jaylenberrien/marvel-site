@@ -35,11 +35,17 @@ const RanCharacterPage = () => {
 
   return(
     <div class='page-container'>
+      <div class="ranPageBio">
+        <h1>Random Popular Character</h1>
+        <p>Here's one of the many cool characters you can discover!</p>
+        <p>Search for more on the Character Search Page!</p>
+      </div>
+
       {character && (
-        <div key={character.id}>
-            <p>{character.name}</p>
+        <div key={character.id} class='character-container'>
+            <h3>{character.name}</h3>
             {character.thumbnail && (
-              <img src={`${character.thumbnail.path}.${character.thumbnail.extension}`}alt={character.name} />
+              <img class="charPic" src={`${character.thumbnail.path}.${character.thumbnail.extension}`}alt={character.name} />
             )};
             <p>{character.description}</p>
         </div>

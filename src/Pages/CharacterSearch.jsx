@@ -35,11 +35,22 @@ const CharacterSearch = () => {
   return (
     <div class="page-container">
       <div>
-        CharactersSearch
+        <div class="charSearchContainer" >
+          <h1>
+            Find a Character
+          </h1>
+          <p>Tip: Click any characters picture for more info on them</p>
+          <input type='text' id="submitCharInput" onChange={change} value={value}placeholder='I want to see ...'/>
+          <button id="submitCharSearch" onClick={click}>Sumbit</button>
+        </div>
+        
+        <div >
+          <CharacterCard characters={characters} /> 
+        </div>
+
+
       </div>
-      <input type='text' id="submitCharInput" onChange={change} value={value}placeholder='I want to see ...'/>
-      <button id="submitCharSearch" onClick={click}>Sumbit</button>
-      <CharacterCard characters={characters} />
+  
     </div>
   )
 }

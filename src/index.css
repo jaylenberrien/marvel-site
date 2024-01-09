@@ -1,12 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Gugi&display=swap');
+
+
+
+
 body{
-  background-color: darkgrey;
+  background-color: rgb(36, 35, 35);
   color:white;
-  /* display: flex; */
+  font-family: 'Archivo', sans-serif;
+  display: flex;
+}
+
+input{
+  margin-bottom:50px;
+}
+
+button{
+  background-color: rgb(19, 19, 19);
+  border: 1px solid rgb(107, 6, 6);
+  border-radius: 20px;
+  color:white;
+  margin-left: 5px;
 }
 
 .page-container{
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin-top: 50px;
 }
 
 
@@ -25,18 +47,18 @@ div#sub.nav-content{
 
 .sub-menu{
   background-color: rgb(77, 6, 6);
-  min-width: 160px;
-  margin-left: -25px;
+  min-width: 200px;
+  margin-left: -40px;
   position: absolute;
   z-index: 1;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   display: none;
   margin-top: 3px;
-  
+  padding: 10px;
 }
 
 .sub-content{
-  padding: 15px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -53,22 +75,36 @@ div#sub.nav-content{
   background-color: rgb(107, 6, 6);
   display: flex;
   justify-content: flex-end;
+  margin: 0;
+  align-items: center;
   margin-top: -8px;
   margin-right: -8px;
   margin-left: -8px;
+  margin-bottom: 100PX;
+  height: 90px;
   
 }
 
 .nav-title{
-  padding: 36px;
-  margin-right: 60%;
+  padding: 10px;
+  /* padding-left: 36px;
+  padding-top: 10px;
+  padding-right: 36px;
+  padding-bottom: 0; */
+  margin-right: 55%;
+  font-family: 'Gugi', sans-serif;
+}
+p.nav-title{
+  font-size: 25px;
+  height: 15px;
+  width: 300px;
 }
 
 .nav-content{
   padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 1;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 div.nav-content{
@@ -97,4 +133,145 @@ a{
 img{
   height: 200px;
   width: 200px;
+  border-radius: 20px;
+}
+
+/* character cards */
+
+.charPic{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.char-name{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.character-container{
+  background-color: rgb(19, 19, 19);
+  border: 2px rgb(107, 6, 6) solid;
+  height: 445px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 10px 10px rgb(25,25,25);
+  text-align: center;
+  padding: 15px;
+}
+
+.char-details-container{
+  background-color: rgb(19, 19, 19);
+  border: 2px rgb(107, 6, 6) solid;
+  height: 800px;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 10px 10px rgb(25,25,25);
+  padding: 20px;
+}
+
+.wording-container{
+  background-color: rgb(19, 19, 19);
+  border: 2px rgb(107, 6, 6) solid;
+  height: 445px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 10px 10px rgb(25,25,25);
+  text-align: center;
+  padding: 15px;
+}
+
+.center{
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.details-title{
+  text-align: center;
+}
+
+
+
+
+/* about page */
+
+#com-transition{
+  display: inline;
+  animation-name: community;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 7s;
+}
+
+@keyframes community{
+  0%{
+    content: "Gathering people that have similar interest"
+  }
+  100%{
+    content: "Community"
+  }
+}
+
+.ranPageBio{
+  margin-left: auto;
+  margin-right: auto;
+  width: 401px;
+  height: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+
+}
+
+/* character search */
+
+.charSearchContainer{
+  /* margin-bottom: 100px; */
+  text-align: center;
+}
+
+.charComicContainer{
+  text-align: center;
+}
+
+.charSeriesContainer{
+  text-align: center;
+}
+
+
+
+/* footer */
+
+.footer{
+  display: flex;
+  height: 70px;
+}
+
+div.footer a{
+  padding:5px;
+  margin-bottom:-8px;
+}
+
+.footer-content{
+  margin: auto;
+}
+
+.footer-text{
+  display:inline;
+}
+
+.footer-logo{
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  margin:0
 }

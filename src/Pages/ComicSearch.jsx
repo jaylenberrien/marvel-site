@@ -35,12 +35,14 @@ const ComicSearch = () => {
 
   return (
     <div class="page-container">
-      <div>
-        ComicSearch
+      <div class="charComicContainer">
+        <h1>
+          Find a Comic
+        </h1>
+        <input type='text' id="submitComicSInput" onChange={change} value={value}placeholder='I want to see ...'/>
+        <button id="submitComicSearch" onClick={click}>Sumbit</button>
+        <ComicCard comics={comics} />
       </div>
-      <input type='text' id="submitComicSInput" onChange={change} value={value}placeholder='I want to see ...'/>
-      <button id="submitComicSearch" onClick={click}>Sumbit</button>
-      <ComicCard comics={comics} />
     </div>
   )
   

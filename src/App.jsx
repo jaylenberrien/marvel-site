@@ -8,7 +8,7 @@ import Footer from './Components/Footer';
 import RanCharacterPage from './Pages/RanCharacterPage';
 import CharacterSearch from './Pages/CharacterSearch';
 import ComicSearch from './Pages/ComicSearch';
-import SeriesSearch from './Pages/seriesSearch';
+import SeriesSearch from './Pages/SeriesSearch';
 import CharacterDetails from './Pages/CharacterDetails';
 
 function App() {

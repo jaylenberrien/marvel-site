@@ -9,8 +9,8 @@ const ComicCard = ({comics}) => {
   return (
     <div id='charSearchResult'>
         {comics.results.map((comic)=> ( 
-            <div key={comic.id}>
-                <p>{comic.name}</p>
+            <div class='character-container' key={comic.id}>
+                <h3>{comic.name}</h3>
                 <img src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}alt={comic.name} />
                 <p>{comic.description}</p>
             </div>

@@ -32,14 +32,18 @@ const CharacterDetails = () => {
 
     return(
         <div class='page-container'>
+            <h1 class="details-title"> Character Details</h1>
             {characterDetails && (
-            <div key={characterDetails.id}>
-                <p>{characterDetails.name}</p>
+            <div class="char-details-container" key={characterDetails.id}>
+              <div class="center">
+                <h2>{characterDetails.name}</h2>
                 {characterDetails.thumbnail && (
                     <img src={`${characterDetails.thumbnail.path}.${characterDetails.thumbnail.extension}`}alt={characterDetails.name} />
                 )};
+              </div>
+                <p>Description:</p>
                 <p>{characterDetails.description}</p>
-                <p>Comic:</p>
+                <p>Comics:</p>
                 <ul>
                     {characterDetails.comics.items.slice(0, 5).map((comic)=>(
                         <li key={comic.name}>{comic.name}</li>

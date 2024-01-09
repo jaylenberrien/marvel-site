@@ -35,12 +35,14 @@ const SeriesSearch = () => {
 
   return (
     <div class="page-container">
-      <div>
-        SeriesSearch
+      <div class="charSeriesContainer">
+        <h1>
+          Find a Series
+        </h1>
+        <input type='text' id="submitSeriesInput" onChange={change} value={value}placeholder='I want to see ...'/>
+        <button id="submitSeriesSearch" onClick={click}>Sumbit</button>
+        <SeriesCard series={series} />
       </div>
-      <input type='text' id="submitSeriesInput" onChange={change} value={value}placeholder='I want to see ...'/>
-      <button id="submitSeriesSearch" onClick={click}>Sumbit</button>
-      <SeriesCard series={series} />
     </div>
   )
   

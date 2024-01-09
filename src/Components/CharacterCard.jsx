@@ -8,10 +8,10 @@ const CharacterCard = ({characters}) => {
         {characters &&
           characters.results.map((character)=> ( 
             <Link key={character.id} to={`/character/${character.id}`}>
-              <div>
-                  <p>{character.name}</p>
+              <div class='character-container'>
+                  <h3 class="char-name">{character.name}</h3>
                   {character.thumbnail && (
-                    <img src={`${character.thumbnail.path}.${character.thumbnail.extension}`}alt={character.name} />
+                    <img class="charPic" src={`${character.thumbnail.path}.${character.thumbnail.extension}`}alt={character.name} />
                   )};
                   
                   <p>{character.description}</p>
