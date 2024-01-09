@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import SeriesCard from '../Components/SeriesCard';
 
 const SeriesSearch = () => {
   
@@ -39,6 +40,7 @@ const SeriesSearch = () => {
       </div>
       <input type='text' id="submitSeriesInput" onChange={change} value={value}placeholder='I want to see ...'/>
       <button id="submitSeriesSearch" onClick={click}>Sumbit</button>
+      <SeriesCard series={series} />
     </div>
   )
   
