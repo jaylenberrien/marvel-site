@@ -10,7 +10,7 @@ const Nav = () => {
                     <div class="nav-content">Home</div>
                 </Link>
                 <Link to="/characters">
-                    <div class="nav-content">Characters</div>
+                    <div class="nav-content">Random Character</div>
                 </Link>
                 <div class="nav-content" id="sub"> 
                     <div class="sub-container"> 
