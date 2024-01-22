@@ -8,7 +8,11 @@ body{
   background-color: rgb(36, 35, 35);
   color:white;
   font-family: 'Archivo', sans-serif;
-  display: flex;
+  /* display: flex; */
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
 }
 
 h1, h2, h3{
@@ -29,14 +33,14 @@ button{
 
 .page-container{
   height: 100%;
-  width: 100%;
-  min-width: 100vw;
+  width: 100vw;
+  /* min-width: 100vw; */
   min-height: 100vh;
   margin-top: 50px;
 }
 
 
-.sub-container{
+.sub-container {
   position: relative;
   display: inline-block;
 }
@@ -45,25 +49,29 @@ div#sub.nav-content{
   padding:0;
 }
 
-.sub-target{
-  padding: 36px
+.sub-target {
+  padding: 10px;
+  cursor: pointer;
 }
 
-.sub-menu{
+.sub-menu {
   background-color: rgb(77, 6, 6);
   min-width: 200px;
-  margin-left: -40px;
   position: absolute;
   z-index: 1;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   display: none;
-  margin-top: 3px;
   padding: 10px;
+  left: 50%;
+  /* bottom: 50%; */
+  transform: translateX(-50%);
 }
 
-.sub-content{
+.sub-content {
   padding: 5px;
   text-align: center;
+  color: white;
+  text-decoration: none;
 }
 
 .sub-content:hover{
@@ -75,40 +83,31 @@ div#sub.nav-content{
 }
 
 
-.nav-bar{
-  background-color: rgb(107, 6, 6);
+.nav-bar {
   display: flex;
-  justify-content: flex-end;
-  margin: 0;
   align-items: center;
+  background-color: rgb(107, 6, 6);
+  padding: 10px;
   margin-top: -8px;
-  margin-right: -8px;
   margin-left: -8px;
-  margin-bottom: 100PX;
-  height: 90px;
-  font-family: 'Gugi', sans-serif;
-  
 }
 
-.nav-title{
-  padding: 10px;
-  /* padding-left: 36px;
-  padding-top: 10px;
-  padding-right: 36px;
-  padding-bottom: 0; */
-  margin-right: 55%;
+
+.nav-title {
+  margin-right: auto;
   font-family: 'Gugi', sans-serif;
 }
+
 p.nav-title{
   font-size: 25px;
   height: 15px;
   width: 300px;
 }
 
-.nav-content{
-  padding: 20px;
-  flex: 1;
-  text-align: center;
+.nav-content {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
@@ -122,7 +121,7 @@ a{
   color: white;
 }
 
-.nav-content:hover{
+.nav-content:hover {
   color: rgb(19, 19, 19);
 }
 
