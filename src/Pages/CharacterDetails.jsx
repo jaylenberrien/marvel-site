@@ -39,7 +39,7 @@ const CharacterDetails = () => {
                 <h2>{characterDetails.name}</h2>
                 {characterDetails.thumbnail && (
                     <img src={`${characterDetails.thumbnail.path}.${characterDetails.thumbnail.extension}`}alt={characterDetails.name} />
-                )};
+                )}
               </div>
                 <p>Description:</p>
                 <p>{characterDetails.description}</p>

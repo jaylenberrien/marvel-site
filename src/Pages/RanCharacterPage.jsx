@@ -46,10 +46,10 @@ const RanCharacterPage = () => {
             <h3>{character.name}</h3>
             {character.thumbnail && (
               <img class="charPic" src={`${character.thumbnail.path}.${character.thumbnail.extension}`}alt={character.name} />
-            )};
+            )}
             <p>{character.description}</p>
         </div>
-      )};
+      )}
     </div>
   );
  

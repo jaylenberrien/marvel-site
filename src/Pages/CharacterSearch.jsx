@@ -15,8 +15,8 @@ const CharacterSearch = () => {
     let userInput = value;
     try{
       let charactersResult = await fetch(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${userInput}${ts}&apikey=${publicKey}${hash}`)
-      charactersResult = await charactersResult.json();
-      setCharacters(charactersResult.data);
+      charactersResult = await charactersResult.json()
+      setCharacters(charactersResult.data)
       console.log(charactersResult.data)
     }
     catch (error){

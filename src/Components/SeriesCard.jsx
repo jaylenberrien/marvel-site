@@ -14,7 +14,7 @@ const SeriesCard = ({series}) => {
                 <img src={`${series.thumbnail.path}.${series.thumbnail.extension}`}alt={series.name} />
                 <p>{series.description}</p>
             </div>
-        ))};
+        ))}
 
 
     </div>

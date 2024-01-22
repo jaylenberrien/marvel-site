@@ -3,7 +3,7 @@ import React from 'react'
 
 const ComicCard = ({comics}) => {
   if(!comics){
-    return null;
+    return null
   }
 
   return (
@@ -14,11 +14,11 @@ const ComicCard = ({comics}) => {
                 <img src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}alt={comic.name} />
                 <p>{comic.description}</p>
             </div>
-        ))};
+        ))}
 
 
     </div>
-  );
-};
+  )
+}
 
 export default ComicCard
